@@ -32,7 +32,9 @@ h1 {
 }
 
 .card-single {
+    width: 90%;
     height: 100%;
+    margin: auto auto;
 }
 
 .card-link+.card-link {
@@ -99,6 +101,12 @@ h1 {
     margin: auto auto;
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
+}
+
+@media (min-width: 1100px) {
+    .card-single {
+        width: 75%;
+    }
 }
 
 @-webkit-keyframes spin {
