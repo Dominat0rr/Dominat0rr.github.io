@@ -86,8 +86,8 @@
     {
         "id": 9,
         "title": "Jeba Consulting",
-        "previewImage": "",
-        "previewImageSmall": "jeba-preview.png",
+        "previewImage": "jeba-preview.gif",
+        "previewImageSmall": "jeba-preview-small.gif",
         "backend": "Java",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
