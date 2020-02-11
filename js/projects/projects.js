@@ -44,6 +44,10 @@ function hideViewButton(hide) {
 }
 
 function loadProjects() {
+    let loader = `<div class="loader"></div>`;
+    projectsDiv.innerHTML = loader;
+    //document.body.style.backgroundImage = 'none';
+
     fetch(jsonFilePath + jsonFileName)
     .then((response) => response.json())
     .then((data) => {
@@ -96,6 +100,8 @@ viewbutton.addEventListener('click', (e) => {
     projectsDiv.innerHTML = '';
 
     if (gridView) {
+        let loader = `<div class="loader"></div>`;
+        projectsDiv.innerHTML = loader;
         fetch(jsonFilePath + jsonFileName)
         .then((response) => response.json())
         .then((data) => {
