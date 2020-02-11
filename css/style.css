@@ -159,6 +159,12 @@ noscript > div {
     border-right: 0.2rem solid #777;
 }
 
+@media(max-height: 880px) {
+    .container-index > h2 {
+        display: none;
+    }
+}
+
 @media(max-width: 800px) {
     .container{
         padding: 0 1rem;
@@ -188,7 +194,9 @@ noscript > div {
         display: block;
         font-size: 5em;
         float: left;
+        width: 100%;
         margin-left: 1rem;
+        margin-bottom: 1rem;
         overflow: hidden;
     }
     .overlay {
