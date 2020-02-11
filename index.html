@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="./icon.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <title>Portfolio</title>
+</head>
+<body class="body-index">
+    <span id="mobile-nav-span" class="mobile-nav" style="font-size:30px; cursor:pointer;" onclick="openNav()">☰ Menu</span>
+    <div id="mobile-nav" class="overlay"></div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Dominik Claerman</a>
+        <div class="container-inline ml-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resume.html">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <noscript>
+        <style>html{display:none;}</style>
+        <meta http-equiv="refresh" content="0.0;url=nojs/index.html">
+    </noscript>
+
+    <div class="container-index">
+        <h1 class="selected">Junior Developer:
+            <span class="txt-type"></span>
+        </h1>
+        <h2>"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine</h2>
+        
+        <div class="projects-btn">
+            <p class="project-btn-info">Projects:</p>
+            <a class="projects-btn-link" href="./projects.html"><i class="fas fa-sort-down fa-5x"></i></a>
+        </div>
+        <div class="row social-links">
+            <a class="links" href="https://www.linkedin.com/in/claermandominik/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a class="links" href="https://github.com/Dominat0rr?tab=repositories"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+    </div>
+    
+    <script src="./js/typeWriter.js"></script>
+    <script src="./js/mobileNav.js"></script>
+</body>
+</html>

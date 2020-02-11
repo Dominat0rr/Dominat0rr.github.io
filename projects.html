@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/projects-styling.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <span id="mobile-nav-span" class="mobile-nav" style="font-size:30px; cursor:pointer;" onclick="openNav()">☰ Menu</span>
+    <div id="mobile-nav" class="overlay"></div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Dominik Claerman</a>
+        <div class="container-inline ml-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resume.html">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <noscript>
+        <style>html{display:none;}</style>
+        <meta http-equiv="refresh" content="0.0;url=nojs/index.html">
+    </noscript>
+    
+    <button onclick="topFunction()" id="scroll-top-btn" title="Go to top">Top</button>
+    <div class="container mt-3 mb-5 text-center">
+        <div class="row">
+            <div id="projects-container" class="col-lg-12">
+                <h1>Projects: </h1>
+                <p>Apart from the projects linked here I do also have some extra projects on my <a class="github-link" href="https://github.com/Dominat0rr?tab=repositories"><i class="fab fa-github"></i> Github</a> page if u might be interested. I can also share the code of my portfolio if needed, or let u have a look in some C++ applications (which are for some obvious reasons not public on git).</p>
+                <p class="notice"><i class="fas fa-exclamation-triangle"></i> Note: if u view a project it can take a few seconds until the dyno is (re)started.</p>
+                <button class="btn btn-dark" id="view-btn"><i id="display-icon" class="fas fa-grip-horizontal"></i></button>
+                <div id="projects" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/projects/projects.js"></script>
+    <script src="./js/mobileNav.js"></script>
+    <script src="./js/onresize.js"></script>
+    <script src="./js/onload.js"></script>
+</body>
+</html>

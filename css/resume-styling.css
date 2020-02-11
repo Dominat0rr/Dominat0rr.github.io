@@ -1,0 +1,9 @@
+body {
+    height: 100vh !important;
+    background-color: rgba(51, 69, 148, 0.9) !important;
+    background-image: none !important;
+}
+
+.top-bar > button {
+    color: white;
+}

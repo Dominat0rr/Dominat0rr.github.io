@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    background-color: rgba(61, 85, 188, 0.9);
+    background-image: linear-gradient(rgba(61, 85, 188, 0.8), rgba(20, 28, 62, 0.9));
+    color: rgba(320, 230, 230, 0.9);
+}
+
+.body-index {
+    height: 100vh;
+    background: #333 url('../images/showcase-leuven.jpg') no-repeat center center / cover;
+    color: #ccc;
+    overflow: hidden;
+}
+
+.container-index > h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    color: #eee;
+    width: 50%;
+    margin: 0.4rem;
+    margin-left: 1rem;
+}
+
+.nav {
+    font-size: 20px;
+}
+
+.mobile-nav, .overlay {
+    display: none;
+}
+
+.container-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+    
+}
+
+.selected {
+    border-radius: 5px;
+    background-color: rgba(131, 120, 144, 0.8);
+    color: rgba(234, 234, 234, 0.8);
+    padding: 15px;
+    margin-right: auto;
+}
+
+h1, h2 {
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.social-links {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 4rem;
+    background-color:rgba(25, 25, 25, 0.9);
+    border-radius: 5px;
+    margin-right: auto;
+}
+
+.links {
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.links:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(65, 65, 65, 0.6);
+    filter: blur(3px);
+}
+
+.links:hover {
+    color: rgba(55, 55, 55, 0.7);
+    box-shadow: 0 0 15px rgba(65, 65, 65, 0.6);
+    text-shadow: 0 0 15px rgba(65, 65, 65, 0.6);
+}
+
+.projects-btn {
+    text-align: center !important;
+}
+
+.project-btn-info {
+    color: white;
+    display:inline;
+    position: absolute;
+    right: center;
+    bottom: 6.5rem;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+    margin-left: -1.5rem;
+}
+
+.projects-btn-link {
+    position: fixed;
+    bottom: 5rem;
+}
+
+.projects-btn-link:hover {
+    transform:scale(1.4, 1.4);
+}
+
+.fas.fa-sort-down {
+    color: rgba(25, 25, 25, 0.9);
+}
+
+
+/* Resume page */
+#pdf-render {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1rem auto;
+    overflow: scroll;
+}
+
+/* No javascript enabled */
+noscript {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: none;
+
+}
+
+noscript > div {
+    color:#333;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.25rem;
+    }
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+
+@media(max-width: 800px) {
+    .container{
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 775px)  {
+    .mobile-nav {
+        display: block;
+        font-size: 5em;
+        float: left;
+        margin-left: 1rem;
+        overflow: hidden;
+    }
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .overlay a {
+        padding: 0.5em;
+        text-decoration: none;
+        font-size: 3em;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .overlay a:hover {
+        color: white;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    nav, nav ul, .navbar-brand {
+        display: none !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .card.card-grid {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 915px) {
+    #pdf-render {
+        width: 100%;
+    }
+}

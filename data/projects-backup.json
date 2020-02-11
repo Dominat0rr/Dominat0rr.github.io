@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "title": "Cultuurhuis",
+        "previewImage": "cultuurhuis-preview.gif",
+        "previewImageSmall": "cultuurhuis-preview-small.gif",
+        "backend": "Java",
+        "database": "MySQL",
+        "frontend": "HTML & CSS (Bootstrap)",
+        "description": "Project made for buying tickets for a theatrical performance. Made with Spring & JPA.",
+        "githubUrl": "https://github.com/Dominat0rr/cultuurhuis-public",
+        "deployedUrl": "https://cultuurhuis.herokuapp.com/"
+    },
+    {
+        "id": 2,
+        "title": "Huisbieder",
+        "previewImage": "huisbieder-preview.png",
+        "previewImageSmall": "huisbieder-preview-small.png",
+        "backend": "Java",
+        "database": "MySQL",
+        "frontend": "HTML & CSS (Bootstrap)",
+        "description": "Demo project made for placing houses forsale and bidding. Made with Spring & JPA.",
+        "githubUrl": "https://github.com/Dominat0rr/huisbieder-public",
+        "deployedUrl": "https://huisbieder.herokuapp.com/"
+    },
+    {
+        "id": 3,
+        "title": "Huisbieder (Front-end)",
+        "previewImage": "huisbieder-preview.png",
+        "previewImageSmall": "huisbieder-preview-small.png",
+        "backend": "",
+        "database": "",
+        "frontend": "Angular",
+        "description": "Frontend demo from the project Huisbieder, writen in Angular and using the RestAPI's from the other project for his calls to get the data.",
+        "githubUrl": "",
+        "deployedUrl": ""
+    },
+    {
+        "id": 4,
+        "title": "Mybrary",
+        "previewImage": "mybrary-preview.png",
+        "previewImageSmall": "mybrary-preview-small.png",
+        "backend": "Node.js",
+        "database": "MongoDB",
+        "frontend": "HTML & CSS",
+        "description": "Small application for storing authors and books in a database.",
+        "githubUrl": "https://github.com/Dominat0rr/Mybrary",
+        "deployedUrl": "https://mybrary-webdev-1.herokuapp.com/"
+    },
+    {
+        "id": 5,
+        "title": "Chat Application (Back-end)",
+        "previewImage": "chatapp-preview.png",
+        "previewImageSmall": "chatapp-preview-small.png",
+        "backend": "Node.js",
+        "database": "",
+        "frontend": "",
+        "description": "Chat application with rooms and users, separated back-end and front-end.",
+        "githubUrl": "https://github.com/Dominat0rr/realtime-chatapp-nodejs-reactjs-Server",
+        "deployedUrl": "https://chat-app-server1.herokuapp.com/"
+    },
+    {
+        "id": 6,
+        "title": "Chat Application (Front-end)",
+        "previewImage": "chatapp-preview.png",
+        "previewImageSmall": "chatapp-preview-small.png",
+        "backend": "",
+        "database": "",
+        "frontend": "React.js",
+        "description": "Chat application with rooms and users, separated back-end and front-end.",
+        "githubUrl": "https://github.com/Dominat0rr/realtime-chatapp-nodejs-reactjs-Client",
+        "deployedUrl": "https://5e398585189996efaea0c8df--fervent-wescoff-54d283.netlify.com/"
+    },
+    {
+        "id": 7,
+        "title": "Payment application",
+        "previewImage": "",
+        "previewImageSmall": "",
+        "backend": "PHP",
+        "database": "MySQL",
+        "frontend": "HTML & CSS (Bootstrap)",
+        "description": "Application that register customers & transactions into a database, using Stripe API for payment system & validation creditcard details",
+        "githubUrl": "https://github.com/Dominat0rr/php-stripe-API-paymentapp",
+        "deployedUrl": ""
+    },
+    {
+        "id": 8,
+        "title": "Asteroids",
+        "previewImage": "asteroids-preview.png",
+        "previewImageSmall": "asteroids-preview-small.png",
+        "backend": "Java",
+        "database": "",
+        "frontend": "Java Swing",
+        "description": "Asteroids arcade game build in Java including all collision detections.",
+        "githubUrl": "https://github.com/Dominat0rr/OGP_Astroids",
+        "deployedUrl": ""
+    },
+    {
+        "id": 9,
+        "title": "Jeba Consulting",
+        "previewImage": "",
+        "previewImageSmall": "jeba-preview.png",
+        "backend": "Java",
+        "database": "MySQL",
+        "frontend": "HTML & CSS (Bootstrap)",
+        "description": "",
+        "githubUrl": "private",
+        "deployedUrl": ""
+    }
+]
