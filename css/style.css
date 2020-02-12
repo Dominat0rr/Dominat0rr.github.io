@@ -96,18 +96,19 @@ h1 {
 
 .project-btn-info {
     color: white;
-    display:inline;
+    display: inline;
     position: absolute;
     right: center;
-    bottom: 6.5rem;
+    bottom: 7rem;
     font-size: 25px;
     font-family: 'Indie Flower', cursive;
-    margin-left: -1.5rem;
+    margin-left: -1.7rem;
 }
 
 .projects-btn-link {
     position: fixed;
     bottom: 5rem;
+    margin-left: -1rem;
 }
 
 .projects-btn-link:hover {
