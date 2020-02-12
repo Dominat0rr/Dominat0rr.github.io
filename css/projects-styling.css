@@ -106,11 +106,23 @@ h1 {
     }
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 767px) {
+    #grid-view {
+        margin-bottom: 2rem;
+    }
+
+    #grid-view:last-child {
+        margin-bottom: 0rem;
+    }
+
+    .card.card-grid {
+        height: 100% !important;
+    }
+
     #view-btn {
         display: none;
     }
-} */
+}
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
