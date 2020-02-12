@@ -1,7 +1,8 @@
 window.onresize = () => {
     loadMobileNav();
     
-    if (window.innerWidth < 915) {
+    if (window.innerWidth < 770) {
+        console.log("change");
         if (!gridView) {
             loadProjects();
         }

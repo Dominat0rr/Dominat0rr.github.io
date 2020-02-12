@@ -12,7 +12,7 @@ onload = () => {
 };
 
 window.onresize = () => {
-    if (window.innerWidth < 915) {
+    if (window.innerWidth < 770) {
         if (!gridView) {
             loadProjects();
         }
