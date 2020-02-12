@@ -67,7 +67,7 @@
         "backend": "PHP",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
-        "description": "Application that register customers & transactions into a database, using Stripe API for payment system & validation creditcard details",
+        "description": "Application that register customers & transactions into a database, using Stripe API for payment & validating creditcard details",
         "githubUrl": "https://github.com/Dominat0rr/php-stripe-API-paymentapp",
         "deployedUrl": ""
     },
