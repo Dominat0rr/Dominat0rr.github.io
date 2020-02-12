@@ -182,6 +182,10 @@ noscript > div {
     h2 {
         font-size: 1.5rem;
     }
+
+    .project-btn-info {
+        bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 775px)  {
