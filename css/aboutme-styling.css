@@ -1,3 +1,8 @@
+#about {
+    color: rgba(20, 20, 20, 0.85);
+    margin-bottom: 3rem;
+}
+
 h1, h2 {
     font-weight: bold;
 }
@@ -6,20 +11,62 @@ h1, h2 {
     list-style-type: none;
 }
 
-.col {
-    padding: 1rem 1rem;
-    margin-top: 2rem;
-    margin-left: 1rem;
+.projects-list {
+    list-style-type: circle;
+}
+
+.row-skills {
+    margin-bottom: 3em !important;
+}
+
+.col-3, .col-4, .col-11 {
     background-color: white;
     color: black;
-    text-align: left;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
-.col:first-child {
-    margin-left: 0;
+.col-11 {
+    padding: 1rem 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.col-3, .col-4 {
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.col-3:first-child, .col-4:first-child {
+    margin-left: auto;
+} 
+
+.col-3:last-child, .col-4:last-child {
+    margin-right: auto;
 }
 
 .aboutme-text {
     font-size: 17px;
+}
+
+#scroll-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color:  rgba(25, 25, 25, 0.9);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+  
+#scroll-top-btn:hover {
+    background-color: #555;
 }

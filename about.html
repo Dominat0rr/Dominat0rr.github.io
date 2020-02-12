@@ -39,12 +39,13 @@
         <meta http-equiv="refresh" content="0.0;url=nojs/index.html">
     </noscript>
     
+    <button onclick="topFunction()" id="scroll-top-btn" title="Go to top">Top</button>
     <div class="container mt-3 mb-5 text-center">
         <div class="row">
             <div class="col-lg-12">
                 <h1>About me: </h1>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-11">
                         <p class="aboutme-text">I'm always looking to solve problems or convert new idea's into projects/code, Whatever I can automate I will look into it and make it automated.<br><br>
                         I got into development around 7-8 years ago while gaming, I was way to curious how games are developed and how I could automate stuff, the first coding experience I build where throught C/C++ tutorials,
                         where I learned to intercept internet traffic between client and server, inject code into running processes, hookin/detouring functions, writing proxydll's, searchpatterns & reverse engineering game engines.<br><br>
@@ -52,87 +53,96 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="mt-5"># Skills</h2>
+            <div id="about">
                 <div class="row">
-                    <div class="col">
-                        <h3><i class="fas fa-code"></i> Back-end</h3>
-                        <ul class="skills-list">
-                            <li>Java</li>
-                            <li>C++</li>
-                            <li>Node.js</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3><i class="fas fa-database"></i> Database</h3>
-                        <ul class="skills-list">
-                            <li>MySQL</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3><i class="fas fa-pen-nib"></i> Front-end</h3>
-                        <ul class="skills-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Angular</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3><i class="fas fa-laptop"></i> Other</h3>
-                        <ul class="skills-list">
-                            <li>Git / Github</li>
-                            <li>Linux</li>
-                            <li>JUnit</li>
-                            <li>Jenkins</li>
-                            <li>Selenium</li>
-                            <li>Agile</li>
-                            <li>Scrum</li>
-                        </ul>
-                    </div>
-                </div>
-                <h2 class="mt-5"># Editors</h2>
-                <div class="row">
-                    <div class="col text-center">
-                        <h3><i class="fas fa-file-alt"></i> Text Editors</h3>
-                        <ul class="skills-list">
-                            <li>Visual Code</li>
-                            <li>Atom</li>
-                            <li>Brackets</li>
-                        </ul>
-                    </div>
-                    <div class="col text-center">
-                        <h3><i class="fas fa-laptop-code"></i> IDE</h3>
-                        <ul class="skills-list">
-                            <li>Visual Studio</li>
-                            <li>IntelliJ</li>
-                            <li>Eclipse</li>
-                            <li>Codeblocks</li>
-                        </ul>
-                    </div>
-                </div>
-                <h2 class="mt-5"># Projects</h2>
-                <div class="row">
-                    <div class="col">
-                        <h3><i class="fas fa-file-code"></i> In progress</h3>
-                        <ul class="skills-list">
-                            <li>Huisbider seperated front-end in Angular with OAuth2 implementation for logging in</li>
-                            <li>Jeba-Consulting</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3><i class="fas fa-file-code"></i> To be made in the near future</h3>
-                        <ul class="skills-list">
-                            <li>Athlete Tracking Application</li>
-                            <li>Database dummy generator and excel to .sql script converter</li>
-                        </ul>
+                    <div class="col-md-12 m-auto">
+                        <h2 class="mt-5"># Skills</h2>
+                        <div class="row">
+                            <div class="col-3">
+                                <h3><i class="fas fa-code"></i> Back-end</h3>
+                                <ul class="skills-list">
+                                    <li>Java</li>
+                                    <li>C++</li>
+                                    <li>Node.js</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h3><i class="fas fa-database"></i> Database</h3>
+                                <ul class="skills-list">
+                                    <li>MySQL</li>
+                                    <li>PostgreSQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h3><i class="fas fa-pen-nib"></i> Front-end</h3>
+                                <ul class="skills-list">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>JavaScript</li>
+                                    <li>React.js</li>
+                                    <li>Angular</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-3">
+                                <h3><i class="fas fa-bug"></i> Testing</h3>
+                                <ul class="skills-list">
+                                    <li>JUnit</li>
+                                    <li>Jenkins</li>
+                                    <li>Selenium</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h3><i class="fas fa-laptop"></i> Other</h3>
+                                <ul class="skills-list">
+                                    <li>Git / Github</li>
+                                    <li>Linux</li>
+                                    <li>Agile</li>
+                                    <li>Scrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="mt-5"># Editors</h2>
+                        <div class="row">
+                            <div class="col-4">
+                                <h3><i class="fas fa-file-alt"></i> Text Editors</h3>
+                                <ul class="skills-list">
+                                    <li>Visual Code</li>
+                                    <li>Atom</li>
+                                    <li>Brackets</li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h3><i class="fas fa-laptop-code"></i> IDE</h3>
+                                <ul class="skills-list">
+                                    <li>Visual Studio</li>
+                                    <li>IntelliJ</li>
+                                    <li>Eclipse</li>
+                                    <li>Codeblocks</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="mt-5"># Projects</h2>
+                        <div class="row">
+                            <div class="col-4">
+                                <h3><i class="fas fa-file-code"></i> In progress</h3>
+                                <ul class="projects-list">
+                                    <li>Jeba-Consulting</li>
+                                    <li>Database dummy generator and excel to .sql script converter</li>
+                                    <li>Huisbider separated front-end in Angular with OAuth2 implementation for logging in</li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h3><i class="fas fa-file-code"></i> Future projects</h3>
+                                <ul class="projects-list">
+                                    <li>Athlete Tracking Web Application</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,5 +150,6 @@
     </div>
 
     <script src="./js/mobileNav.js"></script>
+    <script src="./js/aboutme.js"></script>
 </body>
 </html>

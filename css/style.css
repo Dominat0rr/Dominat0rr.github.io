@@ -6,9 +6,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     height: 100%;
-    background-color: rgba(52, 71, 160, 0.95);
-    /* background-image: linear-gradient(rgba(61, 85, 188, 0.8), rgba(20, 28, 62, 0.9)); */
-    color: rgba(320, 230, 230, 0.9);
+    color: rgba(15, 15, 15, 0.8);
 }
 
 .body-index {
@@ -16,6 +14,11 @@ body {
     background: #333 url('../images/showcase-leuven.jpg') no-repeat center center / cover;
     color: #ccc;
     overflow: hidden;
+}
+
+.container {
+    background-color: rgba(230, 230, 230, 0.8);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
 .container-index > h2 {
@@ -113,16 +116,6 @@ h1 {
 
 .fas.fa-sort-down {
     color: rgba(25, 25, 25, 0.9);
-}
-
-
-/* Resume page */
-#pdf-render {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 1rem auto;
-    overflow: scroll;
 }
 
 /* No javascript enabled */

@@ -1,9 +1,16 @@
-body {
-    height: 100vh !important;
-    background-color: rgba(51, 69, 148, 0.9) !important;
-    background-image: none !important;
+.top-bar > button {
+    color: black;
+    margin-top: 1rem;
 }
 
-.top-bar > button {
-    color: white;
+#resume {
+    max-width: 952px !important;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+#pdf-render {
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+    overflow: scroll;
 }
