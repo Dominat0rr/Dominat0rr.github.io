@@ -74,3 +74,15 @@ h1, h2 {
 #scroll-top-btn:hover {
     background-color: #555;
 }
+
+@media(max-width: 550px) {
+    h3 {
+        font-weight: bold !important;
+        font-size: 10px !important;
+    }
+
+    li {
+        margin-left: -2rem;
+        font-size: 10px;
+    }
+}
