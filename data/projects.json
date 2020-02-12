@@ -91,7 +91,7 @@
         "backend": "Java",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
-        "description": "Application that keeps track of customer clients data regarding which service they took, u can add new client files including all data, u get an email notifications if a client has paid after 30days.",
+        "description": "Application that keeps track of customer clients data regarding which service they took, u can add new client files including all data, u get an email notifications if a client hasn't paid after 30days.",
         "githubUrl": "private",
         "deployedUrl": ""
     }
