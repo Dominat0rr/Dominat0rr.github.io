@@ -16,10 +16,6 @@ h1, h2 {
     justify-content: center;
 }
 
-.row .editors > .col-4 {
-    text-align: center;
-}
-
 .skills-list {
     list-style-type: none;
 }
