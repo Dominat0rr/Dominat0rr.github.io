@@ -267,7 +267,7 @@ noscript > div {
     }
 
     .navbar ul.navbar-nav.show {
-        transform: translateX(-0px);
+        transform: translateX(-20px);
     }
 
     .navbar .container-inline ul li a:hover {

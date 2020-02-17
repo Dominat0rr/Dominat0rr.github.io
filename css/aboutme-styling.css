@@ -81,7 +81,7 @@ h1, h2 {
         font-size: 10px;
     }
 
-    li {
+    .skills-list li, .projects-list li {
         margin-left: -2rem;
         font-size: 10px;
     }
