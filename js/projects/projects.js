@@ -66,7 +66,7 @@ function loadProjects() {
         gridView = true;
         changeButton();
     })
-    .catch(error => console.log(error));
+    .catch(error => console.error(error));
 }
 
 const viewbutton = document.getElementById('view-btn');
@@ -79,7 +79,6 @@ viewbutton.addEventListener('click', (e) => {
         fetch(jsonFilePath + jsonFileName)
         .then((response) => response.json())
         .then((data) => {
-            let closeIndex;
             let output = '';
             data.forEach((project) => {
 
@@ -110,7 +109,7 @@ viewbutton.addEventListener('click', (e) => {
             gridView = false;
             changeButton();
         })
-        .catch(error => console.log(error));
+        .catch(error => console.error(error));
     }
     else {
         loadProjects();
