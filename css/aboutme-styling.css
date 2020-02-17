@@ -1,10 +1,23 @@
-#about {
+.about-me {
     color: rgba(20, 20, 20, 0.85);
     margin-bottom: 3rem;
 }
 
+.about-me > h2 {
+    margin-top: 2rem;
+}
+
 h1, h2 {
     font-weight: bold;
+}
+
+.row .skills {
+    display: flex;
+    justify-content: center;
+}
+
+.row .editors > .col-4 {
+    text-align: center;
 }
 
 .skills-list {
@@ -13,10 +26,6 @@ h1, h2 {
 
 .projects-list {
     list-style-type: circle;
-}
-
-.row-skills {
-    margin-bottom: 3em !important;
 }
 
 .col-3, .col-4, .col-11 {
