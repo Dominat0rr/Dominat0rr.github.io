@@ -5,7 +5,6 @@ const projectsDiv = document.getElementById('projects');
 const displayIcon = document.getElementById('display-icon');
 const viewButton = document.getElementById('view-btn');
 let gridView = true;
-const topButton = document.getElementById("scroll-top-btn");
 
 onload = () => {
     loadProjects();
@@ -16,37 +15,12 @@ window.onresize = () => {
         if (!gridView) {
             loadProjects();
         }
-        hideViewButton(true);
-    } else {
-        hideViewButton(false);
     }
 };
-
-window.onscroll = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topButton.style.display = "block";
-      } else {
-        topButton.style.display = "none";
-      }
-}
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-function hideViewButton(hide) {
-    if (hide) {
-        viewButton.style.display = "none";
-    } else {
-        viewButton.style.display = "block";
-    }
-}
 
 function loadProjects() {
     let loader = `<div class="loader"></div>`;
     projectsDiv.innerHTML = loader;
-    //document.body.style.backgroundImage = 'none';
 
     fetch(jsonFilePath + jsonFileName)
     .then((response) => response.json())

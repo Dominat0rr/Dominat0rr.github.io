@@ -1,3 +1,9 @@
+/* Mobile Nav */
+document.querySelector('.menu-btn').addEventListener('click', () => {
+    document.querySelector('.navbar-nav').classList.toggle('show');
+});
+
+/* Top Scroll - button */
 const topButton = document.getElementById("scroll-top-btn");
 
 window.onscroll = () => {
@@ -9,6 +15,6 @@ window.onscroll = () => {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

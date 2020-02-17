@@ -19,10 +19,6 @@ h1, h2 {
     margin-bottom: 3em !important;
 }
 
-/* .row {
-    margin: auto !important;
-} */
-
 .col-3, .col-4, .col-11 {
     background-color: white;
     color: black;

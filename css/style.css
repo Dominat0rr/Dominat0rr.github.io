@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+    max-width: 1200px;
     background-color: rgba(230, 230, 230, 0.8);
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
@@ -30,11 +31,36 @@ body {
     margin-left: 1rem;
 }
 
-.nav {
+.navbar {
+    background: #343a40;
+    color: #fff;
     font-size: 20px;
 }
 
-.mobile-nav, .overlay {
+.navbar .navbar-container {
+    margin-left: auto;
+}
+
+.navbar .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-container ul li a:hover {
+    padding-bottom: 0;
+    border-bottom: 2px solid #262626;
+    color: #fff;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
     display: none;
 }
 
@@ -135,10 +161,13 @@ noscript > div {
     color:#333;
 }
 
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+
+/* Media */
 @media(min-width: 1200px) {
-    .container {
-        max-width: 1200px !important;
-    }
     h1 {
         font-size: 5rem;
     }
@@ -148,14 +177,20 @@ noscript > div {
     }
 }
 
-/* Cursor */
-.txt-type > .txt {
-    border-right: 0.2rem solid #777;
+@media (max-width: 990px) {
+    .card.card-grid {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 915px) {
+    #pdf-render {
+        width: 100%;
+    }
 }
 
 @media(max-height: 880px) {
     .container-index > h2 {
-        /* display: none; */
         font-size: 1rem;
     }
 }
@@ -174,6 +209,68 @@ noscript > div {
     }
 }
 
+@media (max-width: 775px)  {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .navbar {
+        padding: 0;
+        position: inherit;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-container {
+        width: 100%;
+    }
+
+    .navbar ul.navbar-nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: #f2f2f2;
+        width: 60%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar ul.navbar-nav li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 15px;
+    }
+
+    .nav-link {
+        color: #333 !important;
+        padding-bottom: 0;
+    }
+
+    .navbar ul.navbar-nav li:last-child {
+        border-bottom: 0;
+    }
+
+    .navbar ul.navbar-nav.show {
+        transform: translateX(-20px);
+    }
+
+    .navbar .container-inline ul li a:hover {
+        border-bottom: none;
+    }
+}
+
 @media(max-width: 500px) {
     h1 {
         font-size: 2.5rem;
@@ -184,70 +281,6 @@ noscript > div {
     }
 
     .project-btn-info {
-        bottom: 5rem;
-    }
-}
-
-@media screen and (max-width: 775px)  {
-    .mobile-nav {
-        display: block;
-        font-size: 5em;
-        float: left;
-        width: 100%;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-        overflow: hidden;
-    }
-    .overlay {
-        display: block;
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.9);
-        overflow-x: hidden;
-        transition: 0.5s;
-    }
-    .overlay-content {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .overlay a {
-        padding: 0.5em;
-        text-decoration: none;
-        font-size: 3em;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    .overlay a:hover {
-        color: white;
-    }
-    .overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
-    nav, nav ul, .navbar-brand {
-        display: none !important;
-    }
-}
-
-@media (max-width: 990px) {
-    .card.card-grid {
-        margin-bottom: 2rem;
-    }
-}
-
-@media (max-width: 915px) {
-    #pdf-render {
-        width: 100%;
+        bottom: 7rem;
     }
 }

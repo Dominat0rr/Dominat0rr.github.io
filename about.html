@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="./css/aboutme-styling.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="./icon.png"/>
+    <script defer src="./js/main.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <span id="mobile-nav-span" class="mobile-nav" style="font-size:30px; cursor:pointer;" onclick="openNav()">☰ Menu</span>
-    <div id="mobile-nav" class="overlay"></div>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="/">Dominik Claerman</a>
-        <div class="container-inline ml-auto">
+        <div class="navbar-container container-inline">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
@@ -144,8 +147,5 @@
                 </div>
             </div>
         </div>
-
-    <script src="./js/mobileNav.js"></script>
-    <script src="./js/aboutme.js"></script>
 </body>
 </html>
