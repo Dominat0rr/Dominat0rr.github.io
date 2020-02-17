@@ -56,26 +56,6 @@ h1 {
     width: 7.5%;
 }
 
-#scroll-top-btn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    z-index: 99;
-    font-size: 15px;
-    border: none;
-    outline: none;
-    background-color:  rgba(25, 25, 25, 0.9);
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 4px;
-}
-  
-#scroll-top-btn:hover {
-    background-color: #555;
-}
-
 .notice {
     text-decoration: underline;
 }

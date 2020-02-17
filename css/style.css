@@ -155,6 +155,32 @@ h1 {
     color: rgba(25, 25, 25, 0.9);
 }
 
+/* scroll top button */
+#scroll-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color:  rgba(25, 25, 25, 0.9);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+  
+#scroll-top-btn:hover {
+    background-color: #555;
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+
 /* No javascript enabled */
 noscript {
     background-color: white;
@@ -169,11 +195,6 @@ noscript {
 
 noscript > div {
     color:#333;
-}
-
-/* Cursor */
-.txt-type > .txt {
-    border-right: 0.2rem solid #777;
 }
 
 /* Media */
