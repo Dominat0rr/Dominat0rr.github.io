@@ -59,7 +59,7 @@ body {
     color: #fff;
 }
 
-.navbar .navbar-container ul li a:hover {
+.navbar .navbar-container ul li a:hover, .navbar .navbar-container ul li a:focus {
     padding-bottom: 0;
     border-bottom: 2px solid #262626;
     color: #fff;
@@ -120,38 +120,62 @@ h1 {
     filter: blur(3px);
 }
 
-.links:hover {
+.links:hover, .links:focus {
     color: rgba(55, 55, 55, 0.7);
     box-shadow: 0 0 15px rgba(65, 65, 65, 0.6);
     text-shadow: 0 0 15px rgba(65, 65, 65, 0.6);
+}
+
+button {
+    margin: 1rem;
 }
 
 .projects-btn {
     text-align: center !important;
 }
 
-.project-btn-info {
-    color: white;
-    display: inline;
-    position: absolute;
-    right: center;
-    bottom: 7rem;
-    font-size: 25px;
-    font-family: 'Indie Flower', cursive;
-    margin-left: -1.7rem;
-}
 
-.projects-btn-link {
+.btn {
+    background-color: rgba(25, 25, 25, 0.9);
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
     position: fixed;
     bottom: 5rem;
-    margin-left: -1rem;
+    margin-left: -2rem;
+    cursor: pointer;
 }
 
-.projects-btn-link:hover {
-    transform:scale(1.4, 1.4);
+.btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: .25rem;
+    
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
 }
 
-.fas.fa-sort-down {
+.btn.btn-background-slide:hover::before, .btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+}
+
+.btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.btn.btn-background-slide:hover, .btn.btn-background-slide:focus {
     color: rgba(25, 25, 25, 0.9);
 }
 
@@ -172,7 +196,7 @@ h1 {
     border-radius: 4px;
 }
   
-#scroll-top-btn:hover {
+#scroll-top-btn:hover, #scroll-top-btn:focus {
     background-color: #555;
 }
 
@@ -246,7 +270,7 @@ noscript > div {
         color: #000;
     }
 
-    .menu-btn:hover {
+    .menu-btn:hover, .menu-btn:focus {
         opacity: 0.5;
     }
 
@@ -298,7 +322,7 @@ noscript > div {
         transform: translateX(0px);
     }
 
-    .navbar .container-inline ul li a:hover {
+    .navbar .container-inline ul li a:hover, .navbar .container-inline ul li a:focus {
         border-bottom: none;
     }
 }
