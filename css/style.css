@@ -146,8 +146,8 @@ button {
     outline: none;
     position: fixed;
     bottom: 5rem;
-    margin-left: -2rem;
     cursor: pointer;
+    transform: translate(-50%, -50%);
 }
 
 .btn.btn-background-slide::before {
