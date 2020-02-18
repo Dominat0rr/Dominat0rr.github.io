@@ -126,16 +126,11 @@ h1 {
     text-shadow: 0 0 15px rgba(65, 65, 65, 0.6);
 }
 
-button {
-    margin: 1rem;
-}
-
 .projects-btn {
     text-align: center !important;
 }
 
-
-.btn {
+.btn-projects {
     background-color: rgba(25, 25, 25, 0.9);
     color: #fff;
     font-family: 'Indie Flower', cursive;
@@ -150,7 +145,7 @@ button {
     transform: translate(-50%, -50%);
 }
 
-.btn.btn-background-slide::before {
+.btn-projects.btn-projects-background-slide::before {
     content: '';
     position: absolute;
     top: 0;
@@ -166,16 +161,16 @@ button {
     transform-origin: left;
 }
 
-.btn.btn-background-slide:hover::before, .btn.btn-background-slide:focus::before {
+.btn-projects.btn-projects-background-slide:hover::before, .btn-projects.btn-projects-background-slide:focus::before {
     transform: scaleX(1);
 }
 
-.btn.btn-background-slide {
+.btn-projects.btn-projects-background-slide {
     transition: color 300ms ease-in-out;
     z-index: 1;
 }
 
-.btn.btn-background-slide:hover, .btn.btn-background-slide:focus {
+.btn-projects.btn-projects-background-slide:hover, .btn-projects.btn-projects-background-slide:focus {
     color: rgba(25, 25, 25, 0.9);
 }
 
