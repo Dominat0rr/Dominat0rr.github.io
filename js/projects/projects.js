@@ -3,7 +3,8 @@ const jsonFileName = 'projects.json';
 const imageFilePath = '../../images/';
 const projectsDiv = document.getElementById('projects');
 const displayIcon = document.getElementById('display-icon');
-const viewButton = document.getElementById('view-btn');
+const viewGridButton = document.getElementById('btn-grid');
+const viewListButton = document.getElementById('btn-list');
 let gridView = true;
 
 onload = () => {
@@ -17,6 +18,14 @@ window.onresize = () => {
         }
     }
 };
+
+viewGridButton.addEventListener('click', () => {
+    if (!viewGridButton.parentNode.classList.contains('active')) {
+        viewGridButton.parentNode.classList.add('active');
+        viewListButton.parentNode.classList.remove('active');
+        loadProjects();
+    }
+});
 
 function loadProjects() {
     let loader = `<div class="loader"></div>`;
@@ -63,63 +72,54 @@ function loadProjects() {
             }
         });
         projectsDiv.innerHTML = output;
-        gridView = true;
-        changeButton();
     })
     .catch(error => console.error(error));
 }
 
-const viewbutton = document.getElementById('view-btn');
-viewbutton.addEventListener('click', (e) => {
-    projectsDiv.innerHTML = '';
+viewListButton.addEventListener('click', (e) => {
+    if (!viewListButton.parentNode.classList.contains('active')) {
+        viewListButton.parentNode.classList.add('active');
+        viewGridButton.parentNode.classList.remove('active');
+        projectsDiv.innerHTML = '';
 
-    if (gridView) {
-        let loader = `<div class="loader"></div>`;
-        projectsDiv.innerHTML = loader;
-        fetch(jsonFilePath + jsonFileName)
-        .then((response) => response.json())
-        .then((data) => {
-            let output = '';
-            data.forEach((project) => {
+        if (gridView) {
+            let loader = `<div class="loader"></div>`;
+            projectsDiv.innerHTML = loader;
+            fetch(jsonFilePath + jsonFileName)
+            .then((response) => response.json())
+            .then((data) => {
+                let output = '';
+                data.forEach((project) => {
 
-                let view_project = '';
-                let view_github = '';
-                if (project.deployedUrl !== '') {
-                    view_project = `<a href="${project.deployedUrl}" class="card-link btn btn-dark"><i class="fas fa-laptop-code"></i> View Project</a>`;
-                }
-                if (project.githubUrl === 'private') {
-                    view_github = `<p class="card-link"><i class="far fa-eye-slash"></i> Source private</p>`;
-                } else {
-                    view_github = `<a href="${project.githubUrl}" class="card-link btn btn-dark"><i class="fas fa-code"></i> View Code</a>`;
-                }
+                    let view_project = '';
+                    let view_github = '';
+                    if (project.deployedUrl !== '') {
+                        view_project = `<a href="${project.deployedUrl}" class="card-link btn btn-dark"><i class="fas fa-laptop-code"></i> View Project</a>`;
+                    }
+                    if (project.githubUrl === 'private') {
+                        view_github = `<p class="card-link"><i class="far fa-eye-slash"></i> Source private</p>`;
+                    } else {
+                        view_github = `<a href="${project.githubUrl}" class="card-link btn btn-dark"><i class="fas fa-code"></i> View Code</a>`;
+                    }
 
-                output += `
-                    <div class="card card-single mb-3" data="${project.id}">
-                    <img class="card-img-top img-card" src="${imageFilePath}${project.previewImage}" alt="project preview">
-                        <div class="card-body">
-                        <h5 class="card-title">${project.title}</h5>
-                        <p class="card-text">${project.description}<br>Backend: ${project.backend}<br>Database: ${project.database}<br>Frontend: ${project.frontend}</p>
-                            ${view_project}
-                            ${view_github}
+                    output += `
+                        <div class="card card-single mb-3" data="${project.id}">
+                        <img class="card-img-top img-card" src="${imageFilePath}${project.previewImage}" alt="project preview">
+                            <div class="card-body">
+                            <h5 class="card-title">${project.title}</h5>
+                            <p class="card-text">${project.description}<br>Backend: ${project.backend}<br>Database: ${project.database}<br>Frontend: ${project.frontend}</p>
+                                ${view_project}
+                                ${view_github}
+                            </div>
                         </div>
-                    </div>
-                `;
-            });
-            projectsDiv.innerHTML = output;
-            gridView = false;
-            changeButton();
-        })
-        .catch(error => console.error(error));
-    }
-    else {
-        loadProjects();
+                    `;
+                });
+                projectsDiv.innerHTML = output;
+            })
+            .catch(error => console.error(error));
+        }
+        else {
+            loadProjects();
+        }
     }
 });
-
-function changeButton() {
-    if (!gridView) {
-        displayIcon.className = "fas fa-grip-horizontal";
-    } else {
-        displayIcon.className = "fas fa-grip-lines";
-    }
-}

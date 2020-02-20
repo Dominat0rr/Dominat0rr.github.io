@@ -50,7 +50,10 @@
                 <h1 class="title">Projects: </h1>
                 <p>Apart from the projects shown here I do also have some extra projects on my <a class="github-link" href="https://github.com/Dominat0rr?tab=repositories"><i class="fab fa-github"></i> Github</a> page if u might be interested. I can also share the code some C++ applications (which are not public on git).</p>
                 <p class="notice"><i class="fas fa-exclamation-triangle"></i> Note: if u view a project it can take a few seconds until the dyno is (re)started.</p>
-                <button class="btn btn-dark" id="view-btn"><i id="display-icon" class="fas fa-grip-horizontal"></i></button>
+                <ul class="btns-view">
+                    <li class="active"><button id="btn-grid" class="btn btn-grid" for="mode-grid_top"><i class="fa fa-th"></i></button></li>
+                    <li><button id="btn-list" class="btn btn-list" for="mode-list_top"><i class="fas fa-grip-lines"></i></button></li>
+                </ul>
                 <div id="projects"></div>
             </div>
         </div>

@@ -49,11 +49,27 @@ h1 {
     height: 30em;
 }
 
-#view-btn {
-    position: absolute; 
-    right: 0;
-    margin-right: 1.5rem;
-    width: 7.5%;
+.btns-view {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    right: 2%;
+    float: right;
+}
+
+.btns-view button {
+    background: #fff;
+    color: #343a40;
+    border-color: #fff;
+}
+
+.btns-view .active button {
+    background: #343a40;
+    color: #fff;
+}
+
+.btn-grid {
+    margin-right: 0.5rem;
 }
 
 .notice {
@@ -99,7 +115,7 @@ h1 {
         height: 100% !important;
     }
 
-    #view-btn {
+    .btns-view {
         display: none;
     }
 }
@@ -108,7 +124,7 @@ h1 {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
   }
-  
+
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
