@@ -51,3 +51,25 @@
         transform: translateY(-10rem);
     }
 } */
+
+@media screen and (max-width: 767px) {
+    #lightbox img {
+        max-width: 80%;
+        max-height: 90%;
+    }
+
+    #btn-close {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    #btn-prev {
+        margin-right: 0.3rem;
+        padding: 3px 5px;
+    }
+
+    #btn-next {
+        margin-left: 0.3rem;
+        padding: 3px 5px;
+    }
+}
