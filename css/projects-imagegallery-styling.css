@@ -63,13 +63,17 @@
         left: 1rem;
     }
 
+    #btn-prev, #btn-next {
+        position: fixed;
+        top: 12.5rem;
+        transform: translateY(50%);
+    }
+
     #btn-prev {
-        margin-right: 0.3rem;
-        padding: 3px 5px;
+        transform: translateX(-2rem);
     }
 
     #btn-next {
-        margin-left: 0.3rem;
-        padding: 3px 5px;
+        transform: translateX(2rem);
     }
 }
