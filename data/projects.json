@@ -90,7 +90,7 @@
         "backend": "Java",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
-        "description": "Demo project made for placing houses forsale and bidding. Made with Spring & JPA.",
+        "description": "Demo project: Application for placing houses forsale, let people place biddings on them. Made with Spring & JPA.",
         "githubUrl": "https://github.com/Dominat0rr/huisbieder-public",
         "deployedUrl": "https://huisbieder.herokuapp.com/",
         "amountOfPictures": "7"
@@ -102,7 +102,7 @@
         "backend": "PHP",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
-        "description": "Application to place order beers, check-out and save cart in session",
+        "description": "Application to order beers from different brewers, check-out and save cart in session",
         "githubUrl": "https://github.com/Dominat0rr/php-bierhuis",
         "deployedUrl": "",
         "amountOfPictures": "6"
