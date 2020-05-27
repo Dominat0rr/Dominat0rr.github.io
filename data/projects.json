@@ -8,7 +8,8 @@
         "frontend": "Java Swing",
         "description": "Asteroids arcade game build in Java including collision detections.",
         "githubUrl": "https://github.com/Dominat0rr/OGP_Astroids",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "5"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "frontend": "",
         "description": "Chat application with rooms and users, separated back-end and front-end.",
         "githubUrl": "https://github.com/Dominat0rr/realtime-chatapp-nodejs-reactjs-Server",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "3"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "frontend": "React.js",
         "description": "Chat application with rooms and users, separated back-end and front-end.",
         "githubUrl": "https://github.com/Dominat0rr/realtime-chatapp-nodejs-reactjs-Client",
-        "deployedUrl": "https://5e444bb33133d21e783ec6fa--fervent-wescoff-54d283.netlify.com/"
+        "deployedUrl": "https://5e444bb33133d21e783ec6fa--fervent-wescoff-54d283.netlify.com/",
+        "amountOfPictures": "3"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Application that register customers & transactions into a database, using Stripe API for payment & validating creditcard details",
         "githubUrl": "https://github.com/Dominat0rr/php-stripe-API-paymentapp",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "3"
     },
     {
         "id": 5,
@@ -52,40 +56,44 @@
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "An Instagram clone build in PHP (Laravel 5.8), where u can create users and profiles. U can follow accounts & u can create posts.",
         "githubUrl": "https://github.com/Dominat0rr/codegram-public",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "5"
     },
     {
         "id": 6,
         "title": "Mybrary",
-        "previewImage": "mybrary-preview.gif",
+        "previewImage": "mybrary-preview.png",
         "backend": "Node.js",
         "database": "MongoDB",
         "frontend": "HTML & CSS",
         "description": "Small application for storing authors and books in a database.",
         "githubUrl": "https://github.com/Dominat0rr/Mybrary",
-        "deployedUrl": "https://mybrary-webdev-1.herokuapp.com/"
+        "deployedUrl": "https://mybrary-webdev-1.herokuapp.com/",
+        "amountOfPictures": "7"
     },
     {
         "id": 7,
         "title": "Cultuurhuis",
-        "previewImage": "cultuurhuis-preview.gif",
+        "previewImage": "cultuurhuis-preview.png",
         "backend": "Java",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Project made for buying tickets for a theatrical performance. Made with Spring & JPA.",
         "githubUrl": "https://github.com/Dominat0rr/cultuurhuis-public",
-        "deployedUrl": "https://cultuurhuis.herokuapp.com/"
+        "deployedUrl": "https://cultuurhuis.herokuapp.com/",
+        "amountOfPictures": "10"
     },
     {
         "id": 8,
         "title": "Huisbieder",
-        "previewImage": "huisbieder-preview.gif",
+        "previewImage": "huisbieder-preview.png",
         "backend": "Java",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Demo project made for placing houses forsale and bidding. Made with Spring & JPA.",
         "githubUrl": "https://github.com/Dominat0rr/huisbieder-public",
-        "deployedUrl": "https://huisbieder.herokuapp.com/"
+        "deployedUrl": "https://huisbieder.herokuapp.com/",
+        "amountOfPictures": "7"
     },
     {
         "id": 9,
@@ -96,18 +104,20 @@
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Application to place order beers, check-out and save cart in session",
         "githubUrl": "https://github.com/Dominat0rr/php-bierhuis",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "6"
     },
     {
         "id": 10,
         "title": "Jeba Consulting (In progress)",
-        "previewImage": "jeba-preview.gif",
+        "previewImage": "jeba-preview.png",
         "backend": "Java",
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Application to track customer data and which service they took, adding new clients, email notifications if a client hasn't paid after 30days.",
         "githubUrl": "private",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "3"
     },
     {
         "id": 11,
@@ -118,6 +128,7 @@
         "frontend": "React.js",
         "description": "Application to track incoming and outgoing expenses, checking your current balance.",
         "githubUrl": "https://github.com/Dominat0rr/react-expense-tracker",
-        "deployedUrl": ""
+        "deployedUrl": "",
+        "amountOfPictures": "1"
     }
 ]

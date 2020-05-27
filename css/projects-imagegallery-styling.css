@@ -1,0 +1,53 @@
+#lightbox {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    /*cursor: pointer;*/
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 70%;
+    max-height: 60%;
+    padding: 2px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: default;
+}
+
+#btn-close {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+
+#btn-close, #btn-prev, #btn-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+    margin: 1rem;
+}
+
+/* @media screen and (min-height: 650px) {
+    #lightbox img, #btn-prev, #btn-next {
+        transform: translateY(-10rem);
+    }
+} */

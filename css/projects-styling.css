@@ -30,6 +30,7 @@ h1 {
 
 .card-grid .card-img {
     height: 13rem;
+    cursor: pointer;
 }
 
 .card-grid .card-title {
@@ -57,11 +58,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* .card-img {
-    height: 314px;
-    width: 500px;
-} */
-
 .img-card {
     height: 30em;
 }
@@ -78,6 +74,10 @@ h1 {
 
 .card-single.card-img {
     width: 50% !important;
+}
+
+.card-single .card-img {
+    cursor: pointer;
 }
 
 .card-single .card-img, .card-single .col-md-6 {
