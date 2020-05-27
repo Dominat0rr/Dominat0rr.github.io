@@ -65,8 +65,9 @@
 
     #btn-prev, #btn-next {
         position: fixed;
+        margin: 0;
         top: 12.5rem;
-        transform: translateY(50%);
+        transform: translateX(-50%);
     }
 
     #btn-prev {
