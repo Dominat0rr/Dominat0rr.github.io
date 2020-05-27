@@ -174,10 +174,7 @@ let amount = 0;
 function imageGallery() {
 
     let cardImages = document.querySelectorAll(".card-img");
-
-    console.log(cardImages);
     projects.reverse();
-    console.log(projects);
 
     cardImages.forEach(image => {
         image.addEventListener('click', (e) => {
@@ -195,12 +192,9 @@ function imageGallery() {
             if (amount <= 0 || amount == null) return;
 
             for (let i = 0; i < amount; i++) {
-                console.log(imageGalleryPath + "/" + id  + "_" + (i + 1) + ".png");
                 images.push(imageGalleryPath + "/" + id + "_" + (i + 1) + ".png");
             }
 
-            console.log(imageGalleryPath);
-            console.log(images);
             lightbox.classList.add('active');
             let img = document.createElement('img');
             img.src = images[0];
@@ -235,7 +229,6 @@ function loadNextPicture() {
 
     lightbox.classList.add('active');
     let img = document.createElement('img');
-    console.log(imageIndex);
     img.src = images[imageIndex];
 
     img.onload = () => {
@@ -260,7 +253,6 @@ function loadPreviousPicture() {
 
     lightbox.classList.add('active');
     let img = document.createElement('img');
-    console.log(imageIndex);
     img.src = images[imageIndex];
 
     img.onload = () => {

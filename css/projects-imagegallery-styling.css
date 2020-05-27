@@ -28,7 +28,7 @@
 #btn-close {
     position: fixed;
     top: 2.5rem;
-    right: 2.5rem;
+    right: 5rem;
 }
 
 #btn-close, #btn-prev, #btn-next {
