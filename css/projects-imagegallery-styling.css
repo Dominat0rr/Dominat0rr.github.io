@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 767px) {
     #lightbox img {
-        max-width: 80%;
+        max-width: 90%;
         max-height: 90%;
     }
 
