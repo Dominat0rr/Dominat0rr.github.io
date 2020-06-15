@@ -2,7 +2,6 @@ const jsonFilePath = '../../data/';
 const jsonFileName = 'projects.json';
 const imageFilePath = '../../images/';
 const projectsDiv = document.getElementById('projects');
-const displayIcon = document.getElementById('display-icon');
 const viewGridButton = document.getElementById('btn-grid');
 const viewListButton = document.getElementById('btn-list');
 let gridView = true;
