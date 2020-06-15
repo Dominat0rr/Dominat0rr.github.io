@@ -103,8 +103,8 @@
         "database": "MongoDB",
         "frontend": "React.js",
         "description": "Application to track incoming and outgoing expenses, checking your current balance.",
-        "githubUrl": "https://github.com/Dominat0rr/react-expense-tracker",
-        "deployedUrl": "",
+        "githubUrl": "https://github.com/Dominat0rr/nodejs-expense-tracker-part2",
+        "deployedUrl": "https://expense-tracker-server1.herokuapp.com",
         "amountOfPictures": "1"
     },
     {
