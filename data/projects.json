@@ -9,7 +9,8 @@
         "description": "Asteroids arcade game build in Java including collision detections.",
         "githubUrl": "https://github.com/Dominat0rr/OGP_Astroids",
         "deployedUrl": "",
-        "amountOfPictures": "5"
+        "amountOfPictures": "5",
+        "tags": "java"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "description": "Chat application with rooms and users, separated back-end and front-end.",
         "githubUrl": "https://github.com/Dominat0rr/realtime-chatapp-nodejs-reactjs-Server",
         "deployedUrl": "",
-        "amountOfPictures": "3"
+        "amountOfPictures": "3",
+        "tags": "node.js"
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "description": "Chat application with rooms and users, separated back-end and front-end.",
         "githubUrl": "https://github.com/Dominat0rr/realtime-chatapp-nodejs-reactjs-Client",
         "deployedUrl": "https://5e444bb33133d21e783ec6fa--fervent-wescoff-54d283.netlify.com/",
-        "amountOfPictures": "3"
+        "amountOfPictures": "3",
+        "tags": "react.js"
     },
     {
         "id": 4,
@@ -45,7 +48,8 @@
         "description": "Application that register customers & transactions into a database, using Stripe API for payment & validating creditcard details",
         "githubUrl": "https://github.com/Dominat0rr/php-stripe-API-paymentapp",
         "deployedUrl": "",
-        "amountOfPictures": "3"
+        "amountOfPictures": "3",
+        "tags": "php mysql"
     },
     {
         "id": 5,
@@ -57,7 +61,8 @@
         "description": "An Instagram clone build in PHP (Laravel 5.8), where u can create users and profiles. U can follow accounts & u can create posts.",
         "githubUrl": "https://github.com/Dominat0rr/codegram-public",
         "deployedUrl": "",
-        "amountOfPictures": "5"
+        "amountOfPictures": "5",
+        "tags": "php laravel sqlite"
     },
     {
         "id": 6,
@@ -69,7 +74,8 @@
         "description": "Small application for storing authors and books in a database.",
         "githubUrl": "https://github.com/Dominat0rr/Mybrary",
         "deployedUrl": "https://mybrary-webdev-1.herokuapp.com/",
-        "amountOfPictures": "7"
+        "amountOfPictures": "7",
+        "tags": "node.js mongodb"
     },
     {
         "id": 7,
@@ -81,7 +87,8 @@
         "description": "Project made for buying tickets for a theatrical performance. Made with Spring & JPA.",
         "githubUrl": "https://github.com/Dominat0rr/cultuurhuis-public",
         "deployedUrl": "https://cultuurhuis.herokuapp.com/",
-        "amountOfPictures": "10"
+        "amountOfPictures": "10",
+        "tags": "java srping hibernate mysql"
     },
     {
         "id": 8,
@@ -93,7 +100,8 @@
         "description": "Demo project: Application for placing houses forsale, let people place biddings on them. Made with Spring & JPA.",
         "githubUrl": "https://github.com/Dominat0rr/huisbieder-public",
         "deployedUrl": "https://huisbieder.herokuapp.com/",
-        "amountOfPictures": "7"
+        "amountOfPictures": "7",
+        "tags": "java spring hibernate mysql"
     },
     {
         "id": 9,
@@ -102,10 +110,11 @@
         "backend": "Node.js",
         "database": "MongoDB",
         "frontend": "React.js",
-        "description": "Application to track incoming and outgoing expenses, checking your current balance.",
+        "description": "MERN application to track incoming and outgoing expenses, checking your current balance.",
         "githubUrl": "https://github.com/Dominat0rr/nodejs-expense-tracker-part2",
         "deployedUrl": "https://expense-tracker-server1.herokuapp.com",
-        "amountOfPictures": "1"
+        "amountOfPictures": "1",
+        "tags": "mern node.js mongodb react.js"
     },
     {
         "id": 10,
@@ -115,9 +124,10 @@
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Application to order beers from different brewers, check-out and save cart in session",
-        "githubUrl": "https://github.com/Dominat0rr/php-bierhuis",
-        "deployedUrl": "",
-        "amountOfPictures": "6"
+        "githubUrl": "https://github.com/Dominat0rr/php-bierhuis-public",
+        "deployedUrl": "https://bierhuis.herokuapp.com/",
+        "amountOfPictures": "6",
+        "tags": "php mysql"
     },
     {
         "id": 11,
@@ -129,7 +139,8 @@
         "description": "Application to track customer data and which service they took, adding new clients, email notifications if a client hasn't paid after 30days.",
         "githubUrl": "private",
         "deployedUrl": "",
-        "amountOfPictures": "3"
+        "amountOfPictures": "3",
+        "tags": "java spring hibernate mysql"
     },
     {
         "id": 12,
@@ -139,8 +150,9 @@
         "database": "MySQL",
         "frontend": "HTML & CSS (Bootstrap)",
         "description": "Application to order wines from different countries and variations. With login, logout, signup & order functionality.",
-        "githubUrl": "https://github.com/Dominat0rr/php-wereldwijnen",
+        "githubUrl": "https://github.com/Dominat0rr/php-wereldwijnen-public",
         "deployedUrl": "",
-        "amountOfPictures": "7"
+        "amountOfPictures": "7",
+        "tags": "php mysql"
     }
 ]
