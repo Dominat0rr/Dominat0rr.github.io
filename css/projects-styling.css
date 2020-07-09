@@ -1,6 +1,7 @@
 #projects {
     color: rgba(20, 20, 20, 0.85);
     margin-bottom: 3rem;
+    margin-top: 4rem;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
     margin-top: 2rem;
 }
 
-.row-projects:first-child, .card-single:first-child {
+.card-single:first-child {
     margin-top: 4rem;
 }
 
@@ -151,13 +152,71 @@ h1 {
     animation: spin 2s linear infinite;
 }
 
+/* Filter section */
+.filter-btn a {
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tags {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    width: 100%;
+}
+
+.tags > .row > .col-sm-2 > input {
+    margin-left: 0.75rem;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.tags > .row > .col-sm-2 > label {
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0 !important;
+}
+
 @media screen and (min-width: 1100px) {
     .card-single {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 1200px) {
+    .tags > .row > .col-sm-2 > input {
+        margin-left: 0.5rem;
+        transform: scale(1);
+        cursor: pointer;
+    }
+    
+    .tags > .row > .col-sm-2 > label {
+        font-size: 1rem;
+        margin-left: 0.3rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .card.card-grid {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .tags > .row > .col-sm-2 > input {
+        width: 20%;
+    }
+    
+    .tags > .row > .col-sm-2 > label {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1050px) {
     #grid-view {
         margin-bottom: 2rem;
     }
@@ -166,12 +225,22 @@ h1 {
         margin-bottom: 0rem;
     }
 
-    .card.card-grid {
+    /* .card.card-grid {
         height: 100% !important;
-    }
+    } */
 
     .btns-view {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .tags > .row > .col-sm-2 > input {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 

@@ -227,12 +227,6 @@ noscript > div {
     }
 }
 
-@media (max-width: 990px) {
-    .card.card-grid {
-        margin-bottom: 2rem;
-    }
-}
-
 @media (max-width: 915px) {
     #pdf-render {
         width: 100%;
@@ -289,7 +283,7 @@ noscript > div {
         left: 0;
         z-index: 1;
         background: #f2f2f2;
-        width: 60%;
+        width: 70%;
         height: 100%;
         border-right: #ccc 1px solid;
         opacity: 0.9;
