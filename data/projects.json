@@ -149,7 +149,7 @@
         "backend": "Node.js",
         "database": "GraphQL",
         "frontend": "React.js",
-        "description": "GraphQL project using SpaceX API, to display information about launches. Front-end is made with React.js",
+        "description": "GraphQL project using SpaceX API, to display information about launches.",
         "githubUrl": "https://github.com/Dominat0rr/php-symfony-bierhuis",
         "deployedUrl": "https://graphql-spacex-api.herokuapp.com",
         "amountOfPictures": "2",
