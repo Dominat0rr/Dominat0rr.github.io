@@ -22,7 +22,8 @@ h1 {
 }
 
 .card-grid {
-    height: 36.5rem;
+    /* height: 36.5rem; */
+    height: 37.5rem;
 }
 
 .card-grid .card-img {
@@ -198,6 +199,12 @@ h1 {
     }
 }
 
+@media (max-width: 910px) {
+    .card-grid {
+        height: 40rem;
+    }
+}
+
 @media screen and (min-width: 1100px) {
     .card-single {
         width: 90%;
@@ -220,12 +227,6 @@ h1 {
 @media (max-width: 1050px) {
     .btns-view {
         display: none;
-    }
-}
-
-@media (max-width: 990px) {
-    .card.card-grid {
-        margin-bottom: 2rem;
     }
 }
 
