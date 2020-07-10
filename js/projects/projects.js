@@ -52,7 +52,6 @@ function loadProjectsDiv(grid = true, filter = false) {
     let output = '';
     let filteredProjects = [];
     let _projects = projects; // duplicate to work with filtered tags (this has to be resetted everytime tho)
-    //let col_class = "col-md-4";
 
     // Ignore state fix for filter selection
     if (filter) {
@@ -217,8 +216,6 @@ let amount = 0;
 function imageGallery() {
 
     let cardImages = document.querySelectorAll(".card-img");
-    // let projectsImage = projects.slice(0);
-    // projectsImage.reverse();
 
     cardImages.forEach(image => {
         image.addEventListener('click', (e) => {
@@ -233,7 +230,6 @@ function imageGallery() {
 
             const imageGalleryPath = imageFilePath + id;
             amount = projects[projects.length - id].amountOfPictures;
-            //amount = projectsImage[id - 1].amountOfPictures;
 
             if (amount <= 0 || amount == null) return;
 
@@ -357,19 +353,15 @@ function containsArrayObj(set, array) {
     
     if (set.size === 0 && array.length === 0) {
         value = true;
-        //return true;
     }
-
-    //console.log(set, array);
+    
     array.forEach(arrayObj => {
         set.forEach(setObj => {
             if (setObj.toLowerCase() == arrayObj.toLowerCase()) {
                 value = true;
-                //return true;
             }
         });
     });
 
-    //return false;
     return value;
 }
