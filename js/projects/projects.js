@@ -18,8 +18,10 @@ onload = () => {
     loadProjects();
 };
 
-window.onresize = () => {
-    loadProjectsDiv(true, false);
+window.onresize = () => {    
+    if (viewListButton.parentNode.classList.contains("active")) {
+        loadProjectsDiv(true, false);
+    }
 };
 
 viewGridButton.addEventListener('click', () => {
@@ -50,7 +52,7 @@ function loadProjectsDiv(grid = true, filter = false) {
     let output = '';
     let filteredProjects = [];
     let _projects = projects; // duplicate to work with filtered tags (this has to be resetted everytime tho)
-    let col_class = "col-md-4";
+    //let col_class = "col-md-4";
 
     // Ignore state fix for filter selection
     if (filter) {
@@ -68,23 +70,8 @@ function loadProjectsDiv(grid = true, filter = false) {
         _projects = filteredProjects;
     }
 
-    if (grid) {
+    if (grid || (viewGridButton.parentNode.classList == "" && window.innerWidth >= 770)) {
         _projects.forEach((project, index) => {
-            
-            if (window.innerWidth < 1050) {
-                if (index === 0 || index % 2 === 0) {
-                    output += '<div class="row row-projects">';
-                    closeIndex = index + 1;
-                }
-            }
-            else {
-                if (index === 0 || index % 3 === 0) {
-                    output += '<div class="row row-projects">';
-                    closeIndex = index + 2;
-                }
-            }
-
-
             let view_project = "";
             let view_github = "";
 
@@ -92,25 +79,16 @@ function loadProjectsDiv(grid = true, filter = false) {
                 view_project = `<a href="${project.deployedUrl}" class="card-link btn-project btn btn-dark"><i class="fas fa-laptop-code"></i> View Project</a>`;
             }
 
-            if (project.githubUrl === 'private') {
+            if (project.githubUrl === "private") {
                 view_github = `<p class="card-link btn-github"><i class="far fa-eye-slash"></i> Source private</p>`;
             } else {
                 view_github = `<a href="${project.githubUrl}" class="card-link btn-github btn btn-dark"><i class="fas fa-code"></i> View Code</a>`;
             }
 
-            // change col class
-            if (window.innerWidth < 770) {
-                col_class = "col-sm-6";
-            }
-            else if (window.innerWidth < 1050) {
-                col_class = "col-md-6";
-            } 
-            else {
-                col_class = "col-md-4";
-            }
-
+            if (grid) {  
+                projectsDiv.style.gridTemplateColumns = "1fr 1fr 1fr";  
                 output += `
-                    <div id="grid-view" class="${col_class}" data="${project.id}">
+                    <div id="grid-view" data="${project.id}">
                         <div class="card card-grid" style="width: 100%;">
                             <img class="card-img" src="${imageFilePath}${project.previewImage}" alt="project preview">
                             <div class="card-body">
@@ -122,32 +100,9 @@ function loadProjectsDiv(grid = true, filter = false) {
                         </div>
                     </div>
                 `;
-
-                if (index === closeIndex) {
-                    output += '</div>';
-                }
-            });
-            projectsDiv.innerHTML = output;
-            gridView = true;
-            viewGridButton.parentNode.classList.add("active");
-            viewListButton.parentNode.classList.remove("active");
-        } 
-        else if (viewGridButton.parentNode.classList == "" && window.innerWidth >= 770) {
-            _projects.forEach((project) => {
-
-                let view_project = "";
-                let view_github = "";
-
-                if (project.deployedUrl !== '') {
-                    view_project = `<a href="${project.deployedUrl}" class="card-link btn-project btn btn-dark"><i class="fas fa-laptop-code"></i> View Project</a>`;
-                }
-
-                if (project.githubUrl === 'private') {
-                    view_github = `<p class="card-link btn-github"><i class="far fa-eye-slash"></i> Source private</p>`;
-                } else {
-                    view_github = `<a href="${project.githubUrl}" class="card-link btn-github btn btn-dark"><i class="fas fa-code"></i> View Code</a>`;
-                }
-
+            }
+            else {
+                projectsDiv.style.gridTemplateColumns = "1fr";
                 output += `
                     <div class="card card-single mb-3" data="${project.id}">
                         <div class="row">
@@ -165,17 +120,26 @@ function loadProjectsDiv(grid = true, filter = false) {
                         </div>
                     </div>
                 `;
-            });
-            projectsDiv.innerHTML = output;
+            }
+        });
+
+        projectsDiv.innerHTML = output;
+        if (grid) {    
+                gridView = true;
+                viewGridButton.parentNode.classList.add("active");
+                viewListButton.parentNode.classList.remove("active");
+        } 
+        else {
             gridView = false;
         }
         imageGallery();
+    }        
 }
 
 viewListButton.addEventListener('click', (e) => {
-    if (!viewListButton.parentNode.classList.contains('active')) {
-        viewListButton.parentNode.classList.add('active');
-        viewGridButton.parentNode.classList.remove('active');
+    if (!viewListButton.parentNode.classList.contains("active") && window.innerWidth > 1050) {
+        viewListButton.parentNode.classList.add("active");
+        viewGridButton.parentNode.classList.remove("active");
         projectsDiv.innerHTML = '';
 
         loadProjectsDiv(false, false);
@@ -185,11 +149,11 @@ viewListButton.addEventListener('click', (e) => {
 
 /* Filter on tags */
 filterButton.addEventListener('click',(e) => {
-    filterButton.classList.toggle('active');
-    if (e.target.tagName === "A" && filterButton.classList.contains('active')) {
+    if (e.target.tagName === "A") filterButton.classList.toggle("active");
+    if (e.target.tagName === "A" && filterButton.classList.contains("active")) {
         loadFilterTags();
     }
-    else if (e.target.tagName === "A" && !filterButton.classList.contains('active')) {
+    else if (e.target.tagName === "A" && !filterButton.classList.contains("active")) {
         removeFilterTags();
     }
 
@@ -207,9 +171,11 @@ function loadFilterTags() {
     let output = `<div id='tags' class='tags'>
                     <div class='row'>`;
     tags.forEach(tag => {
+        let checked = "";
+        if (selectedTags.size > 0) checked = (selectedTags.has(tag)) ? "checked": "";
         output += `
             <div class='col-sm-2'>
-                <input type='checkbox' name='tag' value='${tag}'><label>${tag}</label>
+                <input type='checkbox' name='tag' value='${tag}' ${checked}><label>${tag}</label>
             </div>
         `;
     });
