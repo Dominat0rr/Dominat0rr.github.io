@@ -205,7 +205,7 @@ const buttonClose = document.createElement("button");
 buttonClose.id = "btn-close";
 buttonClose.innerHTML = "<i class='fas fa-times'></i>";
 
-let auto = true;            // true is auto image sliding
+let auto = false;            // true is auto image sliding
 const intervalTime = 5000;  // interval time in miliseconds
 let slideInterval;
 let images = [];
@@ -345,6 +345,50 @@ buttonClose.addEventListener('click', e => {
     imageIndex = 0;
     clearInterval(slideInterval);
 })
+
+//eventListener for mobile (swiping) => android tested
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
+
+let xDown = null;                                                        
+let yDown = null;
+
+function getTouches(evt) {
+    return evt.touches ||             // browser API
+           evt.originalEvent.touches; // jQuery
+  }                                                     
+  
+
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                      
+    yDown = firstTouch.clientY;                                      
+};                                                
+
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) return;
+
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+        if ( xDiff > 0 ) {
+            loadPreviousPicture();
+        } else {
+            loadNextPicture();
+        }                       
+    } 
+    // else {
+    //     lightbox.classList.remove('active');
+    //     imageIndex = 0;
+    //     clearInterval(slideInterval);                                                          
+    // }
+    xDown = null;
+    yDown = null;                                             
+};
 
 
 /* Functions / Helpers */
