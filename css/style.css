@@ -292,6 +292,7 @@ noscript > div {
     .navbar {
         padding: 0;
         position: inherit;
+        text-shadow: none !important;
     }
 
     .navbar-brand {
@@ -326,6 +327,7 @@ noscript > div {
 
     .nav-link {
         color: #333 !important;
+        text-shadow: none !important;
         padding-bottom: 0;
     }
 
