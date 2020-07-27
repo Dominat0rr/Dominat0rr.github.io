@@ -280,7 +280,7 @@ noscript > div {
 @media (max-width: 775px)  {
     .menu-btn {
         display: block;
-        color: #000;
+        color: rgba(255, 255, 255, 0.9);
     }
 
     .menu-btn:hover, .menu-btn:focus {
