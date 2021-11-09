@@ -1,60 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="./icon.png"/>
-    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/typeWriter.js"></script>
-    <title>Portfolio</title>
-</head>
-<body class="body-index">
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dominik Claerman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script defer src="./assets/js/typeWriter.js"></script>
+		<script defer src="./assets/js/projects.js"></script>
+	</head>
+	<body class="is-preload">
 
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="/">Dominik Claerman</a>
-        <div class="navbar-container container-inline">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="./projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#aboutme">About me</a></li>
+							<li><a href="#getintouch">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-    <div class="showcase">
-        <noscript>
-            <style>html{display:none;}</style>
-            <meta http-equiv="refresh" content="0.0;url=nojs/index.html">
-        </noscript>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        <div class="container-index">
-            <h1 class="selected index">Junior Developer:
-                <span class="txt-type"></span>
-            </h1>
-            <h2 class="index">"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine</h2>
-            
-            <div class="projects-btn">
-                <a href="./projects.html" class="btn-projects btn-projects-background-slide">Projects:</a>
-            </div>
-            <div class="row social-links">
-                <a class="links" href="https://www.linkedin.com/in/claermandominik/"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                <a class="links" href="https://github.com/Dominat0rr?tab=repositories"><i class="fab fa-github fa-2x"></i></a>
-            </div>
-        </div>
-    </div>
-</body>
+				<!-- Intro | Welcome -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<div class="inner-one">
+								<h1 class="selected index">Junior Developer:
+									<span class="txt-type"></span>
+								</h1>
+
+								<p>
+									Welcome on my portfolio! <br>
+									Here you can find out more about myself, my projects, my skills, and more! <br>
+									Feel free to look around! 
+								</p>
+
+								<br>
+								<p class="quote">"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine</p>
+							</div>
+
+							<div class="inner-two">
+								<ul class="actions">
+									<li><a href="#projects" class="button scrolly">Projects</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Projects -->
+					<section id="projects" class="wrapper style2 spotlights"></section>
+
+				<!-- About me -->
+					<section id="aboutme" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>About me</h2>
+							<p>
+								Hihi! I'm Dominik, a born creative developer and DIYer. 
+								<br>My main experience is focussed on Back-end development,
+								<br>yet my interests go far beyond that in the realm of interconnected technologies. 
+								<br>I'm always looking to solve problems or convert new idea's into projects/code, Whatever I can automate I will try to automate.
+								<br>There is always the passion and the desire to end up better as the previous project.
+								<br>Every project is a small research opportunity to learn more, get quicker and become more skillfull. 
+							</p>
+
+							<br>
+							<h2>Skills</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Back-end</h3>
+									<ul class="skills-list">
+										<li>Java</li>
+										<li>PHP</li>
+										<li>C#</li>
+										<li>C++</li>
+										<li>Node.js</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-database"></span>
+									<h3>Database</h3>
+									<ul class="skills-list">
+										<li>MySQL</li>
+										<li>PostgreSQL</li>
+										<li>MongoDB</li>
+										<li>GraphQL</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-pen-nib"></span>
+									<h3>Front-end</h3>
+									<ul class="skills-list">
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>Bootstrap</li>
+										<li>JavaScript</li>
+										<li>React.js</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-bug"></span>
+									<h3>Testing</h3>
+									<ul class="skills-list">
+										<li>JUnit</li>
+										<li>PHPUnit</li>
+										<li>Jenkins</li>
+										<li>Selenium</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-file-code"></span>
+									<h3>Framwework</h3>
+									<ul class="skills-list">
+										<li>Spring</li>
+										<li>Hibernate</li>
+										<li>Symfony</li>
+										<li>Laravel</li>
+										<li>ASP .NET</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-laptop"></span>
+									<h3>Other</h3>
+									<ul class="skills-list">
+										<li>Git / Github</li>
+										<li>Linux</li>
+										<li>Docker</li>
+										<li>Agile</li>
+										<li>Scrum</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-file-alt"></span>
+									<h3>Text Editors</h3>
+									<ul class="skills-list">
+										<li>Visual Code</li>
+										<li>Atom</li>
+										<li>Brackets</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-laptop-code"></span>
+									<h3>IDE</h3>
+									<ul class="skills-list">
+										<li>Visual Studio</li>
+										<li>IntelliJ</li>
+										<li>Eclipse</li>
+										<li>PhpStorm</li>
+									</ul>
+								</section>
+							</div>
+
+							<h2>Things I Enjoy</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-beer"></span>
+									<h3>Beer</h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-hamburger"></span>
+									<h3>Food</h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-gamepad"></span>
+									<h3>Games</h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-film"></span>
+									<h3>Movies</h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-dumbbell"></span>
+									<h3>Powerlifting</h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-flag-checkered"></span>
+									<h3>Formule 1</h3>
+								</section>
+								<section>
+									<span class="icon brands solid major fa-raspberry-pi"></span>
+									<h3>Raspberry Pi Projects</h3>
+								</section>
+								<!-- <section>
+									<span class="icon solid major fa-cubes"></span>
+									<h3>3D Design and printing</h3>
+								</section> -->
+								<section>
+									<span class="icon solid major fa-toolbox"></span>
+									<h3>DIY Projects</h3>
+								</section>
+								<!-- <section>
+									<span class="icon solid major fa-hands-helping"></span>
+									<h3>Volunteering (Coderdojo)</h3>
+								</section> -->
+							</div>
+
+							<ul class="actions">
+								<li><a href="#getintouch" class="button">Get in touch</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Get in touch -->
+					<section id="getintouch" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<img src="./images/dominik.jpg">
+
+							<p>
+								I got into development around 9 years ago while gaming, I was way to curious how games are developed and how I could automate certain tasks/stuff, 
+								<br>the first coding experience where throught <strong>C/C++</strong> tutorials,
+								<br>where I learned to intercept internet traffic between client and server, inject code into running processes, hooking/detouring functions, writing proxydll's, searchpatterns & reverse engineering game engines.
+								<br><br>During and after University I made the main switch to <strong>Java</strong> (mainly for web development with <strong>Spring</strong> & <strong>Hibernate</strong>.
+								<br>And learned myself to develop in <strong>PHP (Symfony)</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong> & <strong>React.js</strong>.
+								<br><br>Feel free to get in touch with me via email, Linkedin, ...
+							</p>
+
+							<section>
+								<ul class="contact">
+									<li>
+										<h3>Email</h3>
+										<a href="#">claermandominik@gmail.com</a>
+									</li>
+									<li>
+										<h3>Social</h3>
+										<ul class="icons">
+											<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+											<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+											<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+											<li><a href="https://github.com/Dominat0rr?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											<li><a href="https://www.linkedin.com/in/claermandominik/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Dominik Claerman, All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
