@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "GeoResolver",
+        "backend": "Java (Spring) & Kotlin",
+        "database": "MySQL",
+        "frontend": "Thymeleaf (Templating), Bootstrap (CSS)",
+        "description": "Rest API for resolving City based on Longitude and Latitude, This works locally on the server (all city polygons with long and latitude points are stored in memory). So you don't have to use a paid service like Google Maps. It also has an endpoint to get all Belgian Provinces and Cities.",
+        "githubUrl": "non",
+        "tags": "java kotlin spring thymeleaf mysql"
+    },
+    {
+        "id": 2,
+        "title": "Powerbase",
+        "backend": "Java (Spring)",
+        "database": "MySQL",
+        "frontend": "Thymeleaf (Templating), Bootstrap (CSS)",
+        "description": "Web Application to track training (powerlifting). Track fatigue, stress, recovery & nutrition via check-ins. Able to add training schema's and share with with coaches and/or athletes.",
+        "githubUrl": "non",
+        "tags": "java spring thymeleafe mysql"
+    }
+]
