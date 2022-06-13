@@ -79,6 +79,19 @@
     },
     {
         "id": 7,
+        "title": "LeerPlatform (UCLL)",
+        "previewImage": "leerplatform-preview.png",
+        "backend": "C# (ASP.NET)",
+        "database": "MS SQL",
+        "frontend": "Razor, HTML and CSS (Bootstrap)",
+        "description": "blablablablabla blablablablabla blablablablabla blablablablabla blablablablabla blablablablabla blablablablabla",
+        "githubUrl": "private",
+        "deployedUrl": "https://leerplatform-dc.azurewebsites.net/",
+        "amountOfPictures": "1",
+        "tags": "c# .net asp.net razor bootstrap mssql"
+    },
+    {
+        "id": 8,
         "title": "Motor Service App",
         "previewImage": "motorserviceapp-preview.png",
         "backend": "C# (ASP.NET)",
