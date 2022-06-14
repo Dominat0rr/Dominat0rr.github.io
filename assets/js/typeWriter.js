@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
     const txtElement = document.querySelector('.txt-type');
     // const words = ["Java", "C#", "PHP", "Node.js", "React.js", "Angular"];
-    const words = ["Java", "C#", "PHP", "Node.js"];
+    const words = ["Java", "C#", "PHP"];
     const wait = 3000;
 
     new TypeWriter(txtElement, words, wait);
