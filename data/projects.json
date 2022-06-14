@@ -84,7 +84,7 @@
         "backend": "C# (ASP.NET)",
         "database": "MS SQL",
         "frontend": "Razor, HTML and CSS (Bootstrap)",
-        "description": "blablablablabla blablablablabla blablablablabla blablablablabla blablablablabla blablablablabla blablablablabla",
+        "description": "Web Application where you can manage places, subjects and making schedules with classes",
         "githubUrl": "private",
         "deployedUrl": "https://leerplatform-dc.azurewebsites.net/",
         "amountOfPictures": "1",
