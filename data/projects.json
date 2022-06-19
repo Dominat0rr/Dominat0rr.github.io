@@ -98,7 +98,7 @@
         "database": "MS SQL",
         "frontend": "Razor, HTML and CSS (Bootstrap)",
         "description": "Web Application for registering motor services/tasks/oil consumption, shows a checklist and saves the check list on a given mileage.",
-        "githubUrl": "https://github.com/Dominat0rr/MotorServiceApp",
+        "githubUrl": "private",
         "deployedUrl": "",
         "amountOfPictures": "1",
         "tags": "c# .net asp.net razor bootstrap mssql"
