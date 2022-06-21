@@ -1,19 +1,6 @@
 [
     {
         "id": 1,
-        "title": "Asteroids",
-        "previewImage": "asteroids-preview.png",
-        "backend": "Java",
-        "database": "",
-        "frontend": "Java Swing",
-        "description": "Asteroids arcade game build in Java including collision detections.",
-        "githubUrl": "https://github.com/Dominat0rr/OGP_Astroids",
-        "deployedUrl": "",
-        "amountOfPictures": "1",
-        "tags": "java"
-    },
-    {
-        "id": 2,
         "title": "GraphQL SpaceX",
         "previewImage": "graphql-spacex-api-preview.png",
         "backend": "Node.js",
@@ -26,7 +13,7 @@
         "tags": "node.js react.js graphql"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Bierhuis",
         "previewImage": "php-symfony-bierhuis-preview.png",
         "backend": "PHP (Symfony)",
@@ -39,7 +26,7 @@
         "tags": "php symfony twig mysql"
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "Cultuurhuis",
         "previewImage": "cultuurhuis-preview.png",
         "backend": "Java (Spring)",
@@ -52,7 +39,7 @@
         "tags": "java spring hibernate thymeleaf mysql"
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "Huisbieder",
         "previewImage": "huisbieder-preview.png",
         "backend": "Java (Spring)",
@@ -65,7 +52,7 @@
         "tags": "java spring hibernate thymeleaf mysql"
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "Jeba Consulting",
         "previewImage": "jeba-preview.png",
         "backend": "Java (Spring)",
@@ -78,7 +65,7 @@
         "tags": "java spring hibernate freemarker mysql"
     },
     {
-        "id": 7,
+        "id": 6,
         "title": "LeerPlatform (UCLL)",
         "previewImage": "leerplatform-preview.png",
         "backend": "C# (ASP.NET)",
@@ -91,7 +78,7 @@
         "tags": "c# .net asp.net razor bootstrap mssql"
     },
     {
-        "id": 8,
+        "id": 7,
         "title": "Motor Service App",
         "previewImage": "motorserviceapp-preview.png",
         "backend": "C# (ASP.NET)",
