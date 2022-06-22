@@ -73,7 +73,7 @@
         "frontend": "Razor, HTML and CSS (Bootstrap)",
         "description": "Web Application where you can manage places, subjects and making schedules with classes",
         "githubUrl": "private",
-        "deployedUrl": "https://leerplatform-dc.azurewebsites.net/",
+        "deployedUrl": "Request",
         "amountOfPictures": "1",
         "tags": "c# .net asp.net razor bootstrap mssql"
     },
@@ -86,7 +86,7 @@
         "frontend": "Razor, HTML and CSS (Bootstrap)",
         "description": "Web Application for registering motor services/tasks/oil consumption, shows a checklist and saves the check list on a given mileage.",
         "githubUrl": "private",
-        "deployedUrl": "",
+        "deployedUrl": "Request",
         "amountOfPictures": "1",
         "tags": "c# .net asp.net razor bootstrap mssql"
     }
