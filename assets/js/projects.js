@@ -56,8 +56,8 @@ function loadProjectsDiv() {
 
             if (project.deployedUrl === "Request")
                 viewProject = `<li><a href="#" class="button private-button"><i class="fa-solid fa-code-pull-request"></i> Ask for Demo</a></li>`;
-            else if (project.deployedUrl !== "")
-                viewProject = `<li><a href="${project.deployedUrl}" class="button">View project</a></li>`;
+            // else if (project.deployedUrl !== "")
+            //     viewProject = `<li><a href="${project.deployedUrl}" class="button">View project</a></li>`;
 
             if (project.githubUrl === "private")
                 viewGithub = `<li><a href="#" class="button private-button"><i class="far fa-eye-slash"></i> Private</a></li>`;
