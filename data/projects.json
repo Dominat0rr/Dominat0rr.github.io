@@ -57,12 +57,12 @@
         "previewImage": "jeba-preview.png",
         "backend": "Java (Spring)",
         "database": "MySQL",
-        "frontend": "FreeMarker, HTML and CSS (Bootstrap)",
-        "description": "Store customer data, service they took, invoice information, client information, map preview with construction site in your range, ...",
+        "frontend": "Thymeleaf, HTML and CSS (Bootstrap)",
+        "description": "Store customer data, which service they took, invoice information, client information, (Google) maps preview with construction site in your range, ...",
         "githubUrl": "private",
         "deployedUrl": "",
         "amountOfPictures": "1",
-        "tags": "java spring hibernate freemarker mysql"
+        "tags": "java spring hibernate thymeleaf mysql"
     },
     {
         "id": 6,
