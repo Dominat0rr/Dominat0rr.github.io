@@ -84,7 +84,7 @@
         "backend": "C# (ASP.NET)",
         "database": "MS SQL",
         "frontend": "Razor, HTML and CSS (Bootstrap)",
-        "description": "Web Application for registering motor, motor specifications and engine type(s), manage services with service templates and tasks, register oil consumptions",
+        "description": "Web Application for registering motorcycles, specifications and engine type(s), manage services with service templates and tasks, register oil consumptions",
         "githubUrl": "private",
         "deployedUrl": "Request",
         "amountOfPictures": "1",
